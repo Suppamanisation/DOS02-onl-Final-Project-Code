@@ -36,7 +36,7 @@ def insert_mock_name(name, number):
     return 'Person ' + name.strip().title() + ' added to Phonebook successfully'
 
 # Write a function named `insert_person` which inserts person into the phonebook table in the db,
-# and returns text info about result of the operation
+# and returns text info about result of the operation 
 def insert_person(name, number):
     query = f"""
     SELECT * FROM phonebook WHERE name like '{name.strip().lower()}';
